@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <title>JA Entertainment | Welcome</title>
+    </head>
+    <body>
+        <header>
+            <h1 class="title"><span> JA </span> Entertainment - <span><h3>(Under Construction)</h3></span></h1>
+            <div id="curtain_buttons">
+                <div class="open">
+                    <input type="button1" value="ENTER" onclick="open_curtain();">
+                </div>
+                <div class="close">
+                    <input type="button2" value=" close X " onclick="close_curtain();">
+                </div>
+            </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">&nbsp;home&nbsp;</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li class="current"><a href="bookings.html">bookings</a></li>
+                        <li><a href="services.html">services</a></li>
+                        <li><a href="contact.html">contacts</a></li>
+                    </ul>
+                </nav>
+        </header>
+        <main>
+            <div id="main-container">
+                        <div id="effect">
+                            <img src="curtain.png" id="curtain1">
+                            <img src="curtain.png" id="curtain2">
+                    <h4>Piano<span>&</span>Voice Demo</h4>
+                    <div class="video1">
+                        <iframe width="640" height="480" src="https://www.youtube.com/embed/uZzSPagn8ic" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <P>Dimitar Angelov - also known with The artistic name <span>Jimmy Angels</span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto deserunt sapiente fugiat vero minima quis expedi Harum, qui voluptates sunt dolorum, eius quidem possim similique!
+                        </P>
+                    </div>
+                    <h4>Saxophone Demo</h4>
+                    <div class="video2">
+                        <iframe width="640" height="480" src="https://www.youtube.com/embed/VwZUHNIz-pg" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <P>Dimitar Angelov - also known with The artistic name <span>Jimmy Angels</span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto deserunt sapiente fugiat vero minima quis Harum, qui voluptates sunt dolorum, eius quidem possim similique!</P>
+                    </div>
+            </div>
+        </main>
+    </div>
+    <div id="footer">
+        <footer>Jimmy Angels copyright 2021
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        function open_curtain()
+        {
+        $("#curtain1").animate({width:20,height:1200,opacity:1},1100);
+        $("#curtain2").animate({width:20,height:1200,opacity:1},1100);
+        $("input[type='button2']").animate({width:100,opacity:1},750);
+        }
+        function close_curtain()
+        {
+        $("#curtain1").animate({width:2000,height:1300,opacity:1},1500);
+        $("#curtain2").animate({width:2000,height:1300,opacity:1},1500);
+        $("input[type='button2']").animate({width:0,opacity:0},750);
+        }
+        $("#curtain_buttons").click(function() {
+            $(".open").toggle(550);
+            
+        });
+    </script>
+    </body>       
+</html>
