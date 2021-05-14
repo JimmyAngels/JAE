@@ -13,10 +13,10 @@
             <h1 class="title"><span> JA </span> Entertainment - <span><h3>(Under Construction)</h3></span></h1>
             <div id="curtain_buttons">
                 <div class="open">
-                    <input type="button1" value="ENTER" onclick="open_curtain();">
+                    <input type="button" value="ENTER" onclick="open_curtain();">
                 </div>
                 <div class="close">
-                    <input type="button2" value=" close X " onclick="close_curtain();">
+                    <input type="button" value=" close X " onclick="close_curtain();">
                 </div>
             </div>
                 <nav>
@@ -36,13 +36,13 @@
                             <img src="curtain.png" id="curtain2">
                     <h4>Piano<span>&</span>Voice Demo</h4>
                     <div class="video1">
-                        <iframe width="640" height="480" src="https://www.youtube.com/embed/uZzSPagn8ic" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="640" height="480" src="https://www.youtube.com/embed/uZzSPagn8ic" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <P>Dimitar Angelov - also known with The artistic name <span>Jimmy Angels</span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto deserunt sapiente fugiat vero minima quis expedi Harum, qui voluptates sunt dolorum, eius quidem possim similique!
                         </P>
                     </div>
                     <h4>Saxophone Demo</h4>
                     <div class="video2">
-                        <iframe width="640" height="480" src="https://www.youtube.com/embed/VwZUHNIz-pg" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="640" height="480" src="https://www.youtube.com/embed/VwZUHNIz-pg" title="YouTube video player"  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <P>Dimitar Angelov - also known with The artistic name <span>Jimmy Angels</span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto deserunt sapiente fugiat vero minima quis Harum, qui voluptates sunt dolorum, eius quidem possim similique!</P>
                     </div>
                 </div>
@@ -58,13 +58,13 @@
             {
             $("#curtain1").animate({width:20,height:1200,opacity:1},1100);
             $("#curtain2").animate({width:20,height:1200,opacity:1},1100);
-            $("input[type='button2']").animate({width:100,opacity:1},750);
+            $("input[type='button']").animate({width:100,opacity:1},750);
             }
             function close_curtain()
             {
             $("#curtain1").animate({width:2000,height:1300,opacity:1},1500);
             $("#curtain2").animate({width:2000,height:1300,opacity:1},1500);
-            $("input[type='button2']").animate({width:0,opacity:0},750);
+            $("input[type='button']").animate({width:0,opacity:0},750);
             }
             $("#curtain_buttons").click(function() {
                 $(".open").toggle(550);
